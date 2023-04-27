@@ -1,0 +1,225 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result--component {
+  z-index: 100;
+  display: flex;
+}
+
+.left-side {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+  background-image: linear-gradient(rgb(120, 87, 255), rgb(51, 0, 255));
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+.heading-result {
+  color: hsl(241, 100%, 89%);
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.result-rating {
+  align-self: center;
+  height: 15rem;
+  width: 15rem;
+  background-image: linear-gradient(
+    hsla(241, 72%, 46%, 0),
+    hsla(256, 72%, 46%, 1)
+  );
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: hsl(241, 100%, 89%);
+  font-size: 1.2rem;
+
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+}
+
+.rating {
+  display: block;
+  font-size: 5rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.result-great {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.result-description {
+  align-self: center;
+  color: hsl(241, 100%, 89%);
+  font-size: 1.4rem;
+  width: 75%;
+  margin-bottom: 2rem;
+}
+
+.right-side {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 28rem;
+  padding: 0 3rem;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+  margin-left: -1rem;
+
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+}
+
+.heading-summary {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+
+  border-radius: 5px;
+
+  padding: 1rem 1rem;
+}
+
+.box-reaction {
+  background-color: hsla(0, 100%, 67%, 5%);
+}
+
+.icon-reaction {
+  margin-right: 1rem;
+}
+
+.heading-reaction {
+  margin-right: auto;
+  font-size: 1.6rem;
+  color: hsl(0, 100%, 67%);
+  font-weight: 500;
+}
+
+.box-memory {
+  background-color: hsl(39, 100%, 56%, 5%);
+}
+
+.icon-memory {
+  margin-right: 1rem;
+}
+
+.heading-memory {
+  margin-right: auto;
+  font-size: 1.6rem;
+  color: hsl(39, 100%, 56%);
+  font-weight: 500;
+}
+
+.box-verbal {
+  background-color: hsl(166, 100%, 37%, 5%);
+}
+
+.icon-verbal {
+  margin-right: 1rem;
+}
+
+.heading-verbal {
+  margin-right: auto;
+  font-size: 1.6rem;
+  color: hsl(166, 100%, 37%);
+  font-weight: 500;
+}
+
+.box-visual {
+  background-color: hsl(234, 85%, 45%, 5%);
+}
+
+.icon-visual {
+  margin-right: 1rem;
+}
+
+.heading-visual {
+  margin-right: auto;
+  font-size: 1.6rem;
+  color: hsl(234, 85%, 45%);
+  font-weight: 500;
+}
+
+.summary-marks {
+  font-size: 1.2rem;
+  color: hsl(241, 100%, 89%);
+  font-weight: 800;
+}
+
+.summary-marks span {
+  margin-right: 0.5rem;
+  color: hsl(224, 30%, 27%);
+}
+
+.btn {
+  border: none;
+  display: inline-block;
+  padding: 1.4rem 0;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 100px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-image: linear-gradient(hsl(252, 100%, 67%), rgb(51, 0, 255));
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    height: 100vh;
+    width: 100vw;
+    display: block;
+  }
+
+  .result--component {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-side {
+    width: 100%;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .right-side {
+    width: 100%;
+  }
+}
